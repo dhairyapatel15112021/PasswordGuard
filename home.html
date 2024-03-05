@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            background-color: #7D2AE8;
+            text-align: center;
+        }
+        h1{
+            color: #FFFFFF;
+            margin-top:10%;
+        }
+        .password-generator-button {
+            margin-top: 0.3%;
+            border-radius: 5px;
+            background-color: #FFFFFF;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            color: #7D2AE8;
+            font-family: Arial;
+            cursor: pointer;
+        }
+
+        .password-strength-checker-button {
+            margin-top: 0.3%;
+            border-radius: 5px;
+            background-color: #FFFFFF;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            color: #7D2AE8;
+            font-family: Arial;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Home Page!</h1>
+    <button class="password-generator-button">Password Generator</button><br/>
+    <button class="password-strength-checker-button">Password Strength Checker</button>
+    <script>
+        const generatorButton = document.querySelector('.password-generator-button');
+        const strengthCheckerButton = document.querySelector('.password-strength-checker-button');
+
+        generatorButton.addEventListener('click', () => {
+            // Redirect to the password generator page
+            window.location.href = 'passgene.html';
+        });
+
+        strengthCheckerButton.addEventListener('click', () => {
+            // Redirect to the password strength checker page
+            window.location.href = 'passchecker.html';
+        });
+    </script>
+</body>
+</html>
